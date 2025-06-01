@@ -5,22 +5,12 @@
   <title>Contáctenos - RH Asesorías Tránsito</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
-  <script>
-    function initMap() {
-      var ubicacion = {lat: 6.217, lng: -75.603}; // Aproximado a CALLE 5 # 75B 25
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 16,
-        center: ubicacion
-      });
-      var marker = new google.maps.Marker({
-        position: ubicacion,
-        map: map,
-        title: 'Oficinas RH Asesorías Tránsito'
-      });
-    }
-    window.onload = initMap;
-  </script>
+  <!-- Quitar Google Maps y agregar Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    /* Asegura que el mapa tenga altura y borde redondeado si deseas */
+    .mapa-contacto { height: 400px; width: 100%; margin: 30px 0; border-radius: 10px; }
+  </style>
 </head>
 <body>
   <header class="header">
@@ -81,5 +71,22 @@
   <footer>
     <p>&copy; 2025 RH Asesorías Tránsito</p>
   </footer>
+
+  <!-- Leaflet JS y mapa sin API key -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    // Coordenadas aproximadas de CALLE 5 # 75B 25, MALL LA MOTA ZONA C, Medellín
+    var lat = 6.2180;
+    var lng = -75.6110;
+    var map = L.map('map').setView([lat, lng], 16);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    L.marker([lat, lng]).addTo(map)
+      .bindPopup('CALLE 5 # 75B 25, MALL LA MOTA ZONA C')
+      .openPopup();
+  </script>
 </body>
 </html>
