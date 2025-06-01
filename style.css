@@ -283,7 +283,7 @@ footer {
 /* ======================= */
 
 .about-main {
-  background: var(--gris-claro);
+  background: linear-gradient(120deg, var(--azul-claro) 0%, var(--gris-claro) 100%);;
   padding-bottom: 2em;
 }
 .about-main .about-hero {
