@@ -1478,5 +1478,41 @@ nav {
 Y si quieres un botón de WhatsApp destacado en el menú:
 <li><a href="https://wa.me/573150459589" class="cta-menu" target="_blank"><i class="fab fa-whatsapp"></i> Cotiza por WhatsApp</a></li>
 */
-
+/* Minimizar header/topbar usando un checkbox */
+.header-min-toggle {
+  display: none;
+}
+.header-min-label {
+  display: block;
+  text-align: center;
+  background: var(--naranja, #f57c00);
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 0 2px 0;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  z-index: 99;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+}
+.header,
+.topbar,
+.logo-nav {
+  transition: max-height 0.35s, opacity 0.35s, padding 0.3s;
+}
+.header-min-toggle:checked ~ .header,
+.header-min-toggle:checked ~ .topbar,
+.header-min-toggle:checked ~ .logo-nav {
+  max-height: 0px !important;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 !important;
+}
+.header-min-toggle:not(:checked) ~ .header,
+.header-min-toggle:not(:checked) ~ .topbar,
+.header-min-toggle:not(:checked) ~ .logo-nav {
+  opacity: 1;
+  /* max-height y padding normales si lo deseas */
+}
 
