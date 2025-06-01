@@ -1,92 +1,154 @@
+:root {
+  --naranja: #ff7f00;
+  --gris: #444;
+  --gris-claro: #f7f7f7;
+  --blanco: #fff;
+}
+
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
-  background: #f7f7f7;
-  color: #444;
+  background: var(--gris-claro);
+  color: var(--gris);
 }
 
-header {
-  background: linear-gradient(90deg, #ff7f00 70%, #555 100%);
-  color: white;
-  padding: 1rem 0.5rem;
-  text-align: center;
+.header {
+  background: linear-gradient(90deg, var(--naranja) 80%, var(--gris) 100%);
+  color: var(--blanco);
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-header h1 {
-  margin: 0 0 0.5rem 0;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.logo-nav {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2vw;
 }
 
-nav a {
-  color: white;
+.logo {
+  height: 58px;
+  margin-right: 1.2rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li a {
+  color: var(--blanco);
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.2s;
+  font-weight: 500;
+  font-size: 1.13em;
+  padding: 0.4em 0.8em;
+  border-radius: 5px;
+  transition: background 0.2s;
 }
 
-nav a:hover {
-  color: #ffd180;
+.nav-list li a:hover,
+.nav-list li a.active {
+  background: var(--gris);
+  color: var(--naranja);
 }
 
-.main {
-  padding: 2rem 1rem;
-}
-
-.bienvenida {
-  margin: 2rem auto;
-  max-width: 600px;
-  background: #fff;
-  border-radius: 1rem;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-  padding: 2rem;
+.hero {
+  background: url('https://github.com/echava1234/duransua2/raw/main/info-2.jpg') center/cover no-repeat;
+  color: var(--blanco);
   text-align: center;
+  padding: 6vw 3vw 8vw 3vw;
+  border-bottom-left-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
 }
 
-.pegatina-servicios {
+.hero h1 {
+  font-size: 2.8em;
+  margin-bottom: 0.5em;
+  text-shadow: 2px 2px 8px #00000045;
+}
+
+.hero p {
+  font-size: 1.3em;
+  margin-bottom: 2em;
+}
+
+.cta-btn {
+  background: var(--naranja);
+  color: var(--blanco);
+  border: none;
+  font-size: 1.13em;
+  padding: 0.9em 2.1em;
+  border-radius: 2em;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  background: var(--gris);
+  color: var(--naranja);
+}
+
+.info {
+  display: flex;
+  gap: 2vw;
+  max-width: 1100px;
+  margin: 3vw auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.info-card {
+  background: var(--blanco);
+  padding: 1.7em 2em;
+  border-radius: 1em;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+  flex: 1 1 320px;
+  min-width: 250px;
   position: relative;
-  margin: 2rem auto;
-  background: #fff3e0;
-  border-left: 6px solid #ff7f00;
-  max-width: 400px;
-  padding: 1rem 2rem 1rem 2.5rem;
-  font-size: 1.2em;
-  border-radius: 0.5rem;
 }
-
-.pegatina {
+.info-card.destacado {
+  border: 3px solid var(--naranja);
+  background: #fff7ed;
+}
+.pegatina-nuevo {
   position: absolute;
-  left: -1.5rem;
-  top: -1.5rem;
-  background: #ff7f00;
-  color: #fff;
-  font-size: 0.9em;
+  top: -1.1em;
+  left: -1.2em;
+  background: var(--naranja);
+  color: var(--blanco);
+  padding: 0.38em 1.3em;
   font-weight: bold;
-  padding: 0.3rem 1rem;
-  border-radius: 1rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.10);
-  transform: rotate(-10deg);
+  border-radius: 1em;
+  font-size: 0.95em;
+  box-shadow: 0 3px 9px #0001;
+  transform: rotate(-14deg);
+  z-index: 9;
 }
 
-.esquina-servicios {
+.floating-services {
   position: fixed;
-  bottom: 1.2rem;
-  right: 1.2rem;
-  background: #555;
-  color: #fff;
+  bottom: 1.5em;
+  right: 1.5em;
+  background: var(--gris);
+  color: var(--blanco);
   font-weight: bold;
-  padding: 0.7rem 1.5rem;
-  border-radius: 1rem 1rem 0 1rem;
-  z-index: 2000;
-  box-shadow: 0 2px 6px rgba(55,55,55,0.20);
-  font-size: 1em;
+  padding: 0.7em 1.4em;
+  border-radius: 1.1em 1.1em 0 1.1em;
+  box-shadow: 0 2px 8px rgba(90,90,90,0.12);
+  font-size: 1.05em;
+  z-index: 1200;
+  opacity: 0.96;
 }
 
 .burbujas {
@@ -96,14 +158,14 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  z-index: 9999;
+  z-index: 2000;
 }
 
 .burbuja {
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  background: #ff7f00;
+  background: var(--naranja);
   color: #fff;
   display: flex;
   align-items: center;
@@ -115,26 +177,167 @@ nav a:hover {
 }
 
 .burbuja:hover {
-  background: #555;
+  background: var(--gris);
   transform: scale(1.13);
 }
 
 .burbuja.whatsapp { background: #25d366; }
-.burbuja.correo { background: #ff7f00; }
+.burbuja.correo { background: var(--naranja); }
 .burbuja.instagram { background: #E4405F; }
 
 footer {
-  background: #555;
-  color: #fff;
+  background: var(--gris);
+  color: var(--blanco);
   text-align: center;
   padding: 1rem 0;
   margin-top: 2rem;
+  font-size: 1em;
+  letter-spacing: 0.05em;
 }
 
-@media (max-width: 700px) {
-  .bienvenida, .pegatina-servicios {
-    max-width: 98vw;
-    padding: 1rem;
+.titulo-servicios, .titulo-blog {
+  text-align: center;
+  margin-top: 2em;
+  font-size: 2.1em;
+  color: var(--naranja);
+  text-shadow: 1px 1px 8px #00000010;
+}
+
+.servicios-lista {
+  list-style: none;
+  padding: 0;
+  margin: 2rem auto 3rem auto;
+  max-width: 720px;
+}
+.servicios-lista li {
+  background: var(--blanco);
+  border-left: 6px solid var(--naranja);
+  margin-bottom: 1.5rem;
+  padding: 1.2rem 2rem 1.2rem 2.5rem;
+  border-radius: 0.5rem;
+  position: relative;
+  font-size: 1.1em;
+  box-shadow: 0 2px 7px #0001;
+}
+.nuevo-servicio .pegatina {
+  position: absolute;
+  left: -2.7rem;
+  top: -1.1rem;
+  background: var(--naranja);
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 0.3rem 1.2rem;
+  border-radius: 1rem;
+  transform: rotate(-10deg);
+  box-shadow: 0 2px 10px #0001;
+}
+
+.about-section {
+  background: var(--blanco);
+  border-radius: 1em;
+  box-shadow: 0 2px 10px #0001;
+  max-width: 900px;
+  margin: 2em auto 3em auto;
+  padding: 2em 2.5em;
+  text-align: center;
+}
+.about-section h1 { color: var(--naranja); }
+.about-section ul {
+  display: inline-block;
+  text-align: left;
+  margin: 1em auto;
+}
+.about-img img {
+  max-width: 320px;
+  border-radius: 1em;
+  box-shadow: 0 2px 12px #0002;
+  margin: 2em 0;
+}
+
+.mapa-contacto {
+  width: 100%;
+  height: 340px;
+  border-radius: 1rem;
+  margin: 2em 0 2em 0;
+  box-shadow: 0 2px 12px #0001;
+}
+
+.contacto-info {
+  background: var(--blanco);
+  border-left: 6px solid var(--naranja);
+  padding: 2em 2.5em;
+  border-radius: 0.5em;
+  box-shadow: 0 2px 10px #0001;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.12em;
+}
+.contacto-info a {
+  color: var(--naranja);
+  text-decoration: underline;
+}
+
+.blog-posts {
+  max-width: 720px;
+  margin: 2rem auto 4rem auto;
+  background: var(--blanco);
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px #0001;
+  padding: 2rem 2.5rem;
+}
+.blog-post {
+  margin-bottom: 2.4rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1.2rem;
+}
+.blog-post:last-child {
+  border-bottom: none;
+}
+.blog-post h2 {
+  color: var(--naranja);
+  margin-bottom: 0.5em;
+  font-size: 1.35em;
+}
+.fecha-post {
+  color: var(--gris);
+  font-size: 0.97em;
+  font-style: italic;
+  opacity: 0.8;
+}
+.editar-blog {
+  text-align: center;
+  font-size: 1em;
+  color: #888;
+  margin-bottom: 2.5em;
+}
+
+@media (max-width: 900px) {
+  .info {
+    flex-direction: column;
   }
-  nav ul { gap: 0.7rem; }
+  .logo-nav {
+    flex-direction: column;
+    gap: 0.8em;
+    align-items: flex-start;
+  }
+  .logo {
+    margin-bottom: 0.7em;
+  }
+}
+@media (max-width: 600px) {
+  .info-card, .about-section, .contacto-info, .blog-posts {
+    padding: 1.1em 0.7em;
+  }
+  .logo-nav { padding: 0 0.5em; }
+  .hero { padding: 3vw 1vw 6vw 1vw; }
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  background: #fafafa;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--naranja);
+  border-radius: 4px;
 }
