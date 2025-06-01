@@ -5,11 +5,26 @@
   <title>Contáctenos - RH Asesorías Tránsito</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <!-- Quitar Google Maps y agregar Leaflet -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <!-- Quitar Leaflet y agregar Mapbox GL -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet" />
   <style>
-    /* Asegura que el mapa tenga altura y borde redondeado si deseas */
     .mapa-contacto { height: 400px; width: 100%; margin: 30px 0; border-radius: 10px; }
+    .logo-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px 0;
+    }
+    .logo { display: block; margin: 0 auto; max-width: 220px; height: auto; }
+    nav { width: 100%; display: flex; justify-content: center; }
+    .nav-list { display: flex; gap: 20px; justify-content: center; padding: 0; margin: 0; list-style: none; }
+    @media (max-width: 700px) {
+      .logo-nav { gap: 5px; padding: 10px 0;}
+      .logo { max-width: 150px;}
+      .nav-list { flex-direction: column; gap: 10px;}
+    }
   </style>
 </head>
 <body>
@@ -71,22 +86,22 @@
   <footer>
     <p>&copy; 2025 RH Asesorías Tránsito</p>
   </footer>
-
-  <!-- Leaflet JS y mapa sin API key -->
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Script Mapbox GL -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
   <script>
-    // Coordenadas aproximadas de CALLE 5 # 75B 25, MALL LA MOTA ZONA C, Medellín
-    var lat = 6.2180;
-    var lng = -75.6110;
-    var map = L.map('map').setView([lat, lng], 16);
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZWNoYXZhMDIyIiwiYSI6ImNtYmRmdmN1cTI2MGgycnEwczg2eXJheWoifQ.TmY7RziiPB2ThNaser5eLQ';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v12',
+        center: [-75.6110, 6.2180], // [lng, lat]
+        zoom: 16
+    });
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '© OpenStreetMap contributors'
-    }).addTo(map);
-
-    L.marker([lat, lng]).addTo(map)
-      .bindPopup('CALLE 5 # 75B 25, MALL LA MOTA ZONA C')
-      .openPopup();
+    // Agregar marcador
+    new mapboxgl.Marker()
+      .setLngLat([-75.6110, 6.2180])
+      .setPopup(new mapboxgl.Popup().setHTML('<b>CALLE 5 # 75B 25, MALL LA MOTA ZONA C</b>'))
+      .addTo(map);
   </script>
 </body>
 </html>
