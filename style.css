@@ -230,6 +230,18 @@ footer {
   position: relative;
   font-size: 1.1em;
   box-shadow: 0 2px 7px #0001;
+  display: flex;
+  align-items: flex-start;
+  min-height: 2.7em;
+}
+.servicio-icono {
+  color: var(--naranja);
+  font-size: 1.3em;
+  margin-right: 0.6em;
+  margin-top: 0.13em;
+  min-width: 1.7em;
+  text-align: center;
+  vertical-align: middle;
 }
 .nuevo-servicio .pegatina {
   position: absolute;
