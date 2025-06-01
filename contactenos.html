@@ -74,7 +74,7 @@
     var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/satellite-streets-v12', // Puedes cambiar el estilo aquí
-        center: [-75.6110, 6.2180], // [lng, lat]
+        center: [-75.60763, 6.21779], // [lng, lat]
         zoom: 17
     });
 
@@ -87,7 +87,7 @@
 
     // Marcador personalizado (color rojo)
     new mapboxgl.Marker({ color: 'red' })
-      .setLngLat([-75.6110, 6.2180])
+      .setLngLat([-75.60763, 6.21779])
       .setPopup(popup)
       .addTo(map);
 
