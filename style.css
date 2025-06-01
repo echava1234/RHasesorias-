@@ -5,6 +5,7 @@
   --gris: #444;
   --gris-claro: #f7f7f7;
   --blanco: #fff;
+  --azul-claro: #d6eaff;
 }
 
 /* ======================= */
@@ -14,7 +15,7 @@
 body {
   font-family: 'Lato', Arial, sans-serif;
   margin: 0;
-  background: var(--gris-claro);
+  background: linear-gradient(120deg, var(--azul-claro) 0%, var(--gris-claro) 100%);
   color: var(--gris);
 }
 
