@@ -1515,4 +1515,25 @@ Y si quieres un botón de WhatsApp destacado en el menú:
   opacity: 1;
   /* max-height y padding normales si lo deseas */
 }
+.lema-empresa {
+  display: block;
+  margin-top: 6px;
+  font-family: 'Montserrat', 'Lato', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 1.28em;
+  color: var(--naranja);
+  letter-spacing: 1.5px;
+  text-align: center;
+  text-shadow: 1px 2px 8px #0001;
+  /* Para el toque elegante: */
+  font-variant: small-caps;
+  /* Puedes probar con cursiva si lo prefieres: */
+  /* font-style: italic; */
+}
+@media (max-width: 700px) {
+  .lema-empresa {
+    font-size: 1em;
+    padding: 0 8px;
+  }
+}
 
