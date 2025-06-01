@@ -4,7 +4,7 @@
   --naranja: #ff7f00;
   --gris: #444;
   --gris-claro: #f7f7f7;
-  --blanco: #e0f7fa;
+  --blanco: #fff;
 }
 
 /* ======================= */
@@ -41,6 +41,7 @@ body {
 .logo {
   height: 90px;
   margin-right: 1.2rem;
+   margin-bottom: 6px;
 }
 
 .nav-list {
