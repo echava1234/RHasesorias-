@@ -27,32 +27,24 @@
   </header>
 
   <!-- SECCIÓN HERO -->
-  <main>
-    <section class="hero">
-      <h1>RH Asesorías Tránsito</h1>
-      <p>Expertos en trámites de tránsito en Colombia.<br>
-         Soluciones ágiles, confiables y personalizadas para ti y tu empresa.</p>
-      <a href="servicios.html" class="cta-btn">Conoce Nuestros Servicios</a>
-    </section>
-
-    <!-- BENEFICIOS -->
-    <section class="info">
-      <div class="info-card">
-        <h2>¿Por qué elegirnos?</h2>
-        <ul>
-          <li>+10 años de experiencia</li>
-          <li>Trámites 100% legales y transparentes</li>
-          <li>Atención personalizada y rápida</li>
-          <li>Gestión en todo el país</li>
-          <li>Soporte integral post-servicio</li>
-        </ul>
-      </div>
-      <div class="info-card destacado">
-        <h2>¡Nuevo servicio!</h2>
-        <div class="pegatina-nuevo">100% Digital</div>
-        <p>Traspasos de vehículos completamente en línea.<br>Sin filas, sin papeles, sin pérdidas de tiempo.</p>
-      </div>
-    </section>
+  <!-- HERO SLIDER en el inicio -->
+<section class="hero hero-slider">
+  <div class="hero-slider-images">
+    <img src="https://github.com/echava1234/duransua2/raw/main/info-2.jpg" alt="Tránsito Medellín" class="hero-slide active">
+    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1100&q=80" alt="Asesoría Vehicular" class="hero-slide">
+    <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=1100&q=80" alt="Documentos Digitales" class="hero-slide">
+  </div>
+  <div class="hero-slider-content">
+    <h1>Trámites de Tránsito sin Complicaciones</h1>
+    <p>Confía en RH Asesorías Tránsito para gestionar tu traspaso, levantamiento de prenda y otros trámites, de forma rápida y segura.</p>
+    <a href="servicios.html" class="cta-btn">Ver Servicios</a>
+  </div>
+  <div class="hero-slider-dots">
+    <span class="hero-dot active"></span>
+    <span class="hero-dot"></span>
+    <span class="hero-dot"></span>
+  </div>
+</section>
 
     <!-- SERVICIOS DESTACADOS -->
     <section class="destacados-home">
@@ -168,5 +160,49 @@
   <footer>
     <p>&copy; 2025 RH Asesorías Tránsito</p>
   </footer>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.hero-dot');
+    let currentSlide = 0;
+    const totalSlides = slides.length;
+    let sliderInterval = null;
+
+    function showSlide(idx) {
+      slides.forEach((img, i) => {
+        img.classList.toggle('active', i === idx);
+      });
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === idx);
+      });
+      currentSlide = idx;
+    }
+
+    function nextSlide() {
+      showSlide((currentSlide + 1) % totalSlides);
+    }
+
+    // Autoplay
+    function startSlider() {
+      sliderInterval = setInterval(nextSlide, 4500);
+    }
+    function stopSlider() {
+      clearInterval(sliderInterval);
+    }
+
+    // Dots click
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        showSlide(i);
+        stopSlider();
+        startSlider();
+      });
+    });
+
+    // Iniciar slider al cargar
+    showSlide(0);
+    startSlider();
+  });
+</script>
 </body>
 </html>
