@@ -2,25 +2,9 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Contáctenos - RH Asesorías Tránsito</title>
+  <title>Blog - RH Asesorías Tránsito</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
-  <script>
-    function initMap() {
-      var ubicacion = {lat: 6.217, lng: -75.603}; // Aproximado a CALLE 5 # 75B 25
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 16,
-        center: ubicacion
-      });
-      var marker = new google.maps.Marker({
-        position: ubicacion,
-        map: map,
-        title: 'Oficinas RH Asesorías Tránsito'
-      });
-    }
-    window.onload = initMap;
-  </script>
 </head>
 <body>
   <header class="header">
@@ -38,13 +22,21 @@
     </div>
   </header>
   <main>
-    <h1>Contáctenos</h1>
-    <div id="map" class="mapa-contacto"></div>
-    <section class="contacto-info">
-      <p><strong>Dirección:</strong> CALLE 5 # 75B 25, MALL LA MOTA ZONA C</p>
-      <p><strong>Teléfonos:</strong> 3150459589, 3143159586</p>
-      <p><strong>Correo:</strong> <a href="mailto:rhasesoriastransito@gmail.com">rhasesoriastransito@gmail.com</a></p>
-    </section>
+    <h1 class="titulo-blog"><i class="fas fa-newspaper"></i> Blog de Noticias de Tránsito</h1>
+    <div class="blog-posts">
+      <div class="blog-post">
+        <h2>Nuevo pico y placa en la ciudad</h2>
+        <p>Desde el 1 de junio entra en vigencia el nuevo pico y placa para vehículos particulares. Consulta cómo te afecta.</p>
+        <span class="fecha-post">01/06/2025</span>
+      </div>
+      <div class="blog-post">
+        <h2>Actualización en los procesos de traspaso digital</h2>
+        <p>El Ministerio de Transporte anuncia la digitalización completa del trámite de traspasos. Ahora es más fácil y seguro.</p>
+        <span class="fecha-post">28/05/2025</span>
+      </div>
+      <!-- Agrega aquí más noticias -->
+    </div>
+    <p class="editar-blog">¿Deseas editar el blog? Abre este archivo (<code>blog.html</code>) y agrega o modifica las entradas fácilmente.</p>
   </main>
   <div class="floating-services">
     <span>Prestamos servicios de <strong>Efecty</strong>, <strong>Servientrega</strong> y <strong>Coordinadora</strong></span>
