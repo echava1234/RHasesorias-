@@ -21,7 +21,7 @@ body {
 /* Header/Nav */
 .header {
   background: linear-gradient(90deg, var(--naranja) 80%, var(--gris) 100%);
-  color: var(--blanco);
+  color: var(--gris);
   padding: 0.5rem 0;
   position: sticky;
   top: 0;
