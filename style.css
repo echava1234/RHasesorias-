@@ -1518,7 +1518,7 @@ Y si quieres un botón de WhatsApp destacado en el menú:
 }
 .lema-empresa {
   display: block;
-  margin-top: 2px;
+  margin-top: 0px;
   font-family: 'Montserrat', 'Lato', Arial, sans-serif;
   font-weight: 900;
   font-size: 1.28em;
