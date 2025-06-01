@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Sobre Nosotros - RH Asesorías Tránsito</title>
   <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome para iconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
@@ -14,71 +15,139 @@
         <ul class="nav-list">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+          <li><a href="sobrenosotros.html" class="active">Sobre Nosotros</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contactenos.html">Contáctenos</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <main>
-    <section class="about-section">
-      <h1>Sobre Nosotros</h1>
-      <p>
-        <strong>RH Asesorías Tránsito</strong> es una empresa líder dedicada a la gestión y asesoría de trámites de tránsito en Colombia. Con más de 10 años de experiencia, hemos ayudado a miles de personas y empresas a resolver sus necesidades de movilidad de manera ágil, transparente y segura.
-      </p>
-      <div class="about-img">
-        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Nuestro equipo">
+  <main class="about-main">
+    <section class="about-hero">
+      <div class="about-hero-text">
+        <h1>Conócenos</h1>
+        <p>
+          En <strong>RH Asesorías Tránsito</strong> somos tu aliado estratégico para realizar trámites de tránsito de forma ágil, legal y segura.<br>
+          Más de <b>10 años</b> acompañando a personas y empresas en Colombia.
+        </p>
+        <div class="about-hero-cta">
+          <a href="servicios.html" class="cta-btn">Ver Servicios</a>
+        </div>
       </div>
+      <div class="about-hero-img">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Equipo RH Asesorías">
+      </div>
+    </section>
+
+    <section class="about-mision-vision">
+      <div class="about-mision">
+        <i class="fas fa-bullseye"></i>
+        <h2>Misión</h2>
+        <p>
+          Brindar acompañamiento integral y asesoría profesional en todos los trámites de tránsito, garantizando la satisfacción y tranquilidad de nuestros clientes.
+        </p>
+      </div>
+      <div class="about-vision">
+        <i class="fas fa-eye"></i>
+        <h2>Visión</h2>
+        <p>
+          Ser reconocidos a nivel nacional como la empresa de asesoría de tránsito más confiable, innovadora y cercana, impulsando soluciones 100% digitales.
+        </p>
+      </div>
+      <div class="about-valores">
+        <i class="fas fa-heart"></i>
+        <h2>Valores</h2>
+        <ul>
+          <li><b>Transparencia</b></li>
+          <li><b>Compromiso</b></li>
+          <li><b>Agilidad</b></li>
+          <li><b>Innovación</b></li>
+          <li><b>Respeto</b></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about-historia">
       <h2>Nuestra Historia</h2>
-      <p>
-        Nacimos de la necesidad de simplificar los procesos de tránsito, eliminando el estrés y la incertidumbre para nuestros clientes. Desde nuestros inicios en Medellín, hemos crecido gracias a la confianza de quienes valoran la honestidad, la eficiencia y la atención personalizada.
-      </p>
-      <h2>Misión</h2>
-      <p>
-        Brindar soluciones integrales y confiables en trámites de tránsito, asegurando la satisfacción y tranquilidad de nuestros usuarios mediante un acompañamiento cercano y profesional.
-      </p>
-      <h2>Visión</h2>
-      <p>
-        Ser la empresa de asesorías de tránsito más reconocida a nivel nacional por nuestra innovación, transparencia y excelencia en el servicio.
-      </p>
-      <h2>Valores</h2>
-      <ul>
-        <li><b>Transparencia</b>: procesos claros y honestos.</li>
-        <li><b>Agilidad</b>: respuesta y gestión rápida.</li>
-        <li><b>Compromiso</b>: acompañamos de principio a fin.</li>
-        <li><b>Innovación</b>: trámites 100% digitales y seguros.</li>
-        <li><b>Respeto</b>: atención amable y personalizada.</li>
-      </ul>
-      <h2>¿Por qué elegir RH Asesorías?</h2>
-      <ul>
-        <li><i class="fas fa-user-check servicio-icono"></i> Atención personalizada y cercana.</li>
-        <li><i class="fas fa-shield-alt servicio-icono"></i> Seguridad y respaldo en cada trámite.</li>
-        <li><i class="fas fa-bolt servicio-icono"></i> Procesos ágiles y sin complicaciones.</li>
-        <li><i class="fas fa-globe servicio-icono"></i> Cobertura en todo el país.</li>
-        <li><i class="fas fa-thumbs-up servicio-icono"></i> 98% de satisfacción de nuestros clientes.</li>
-      </ul>
-      <div class="about-achievements">
+      <div class="about-historia-grid">
         <div>
-          <i class="fas fa-users"></i>
-          <span>+2,500</span>
-          <p>Clientes Satisfechos</p>
+          <p>
+            <strong>RH Asesorías Tránsito</strong> nació en Medellín como respuesta a la necesidad de contar con un aliado confiable para los trámites vehiculares. Nuestro equipo, conformado por expertos en normativa y procesos, ha gestionado más de 2,500 casos exitosos, acompañando tanto a particulares como empresas a lo largo de la última década.
+          </p>
+          <ul class="about-razones">
+            <li><i class="fas fa-user-check"></i> Atención personalizada y cercana</li>
+            <li><i class="fas fa-shield-alt"></i> Procesos 100% legales y seguros</li>
+            <li><i class="fas fa-bolt"></i> Respuesta rápida y eficaz</li>
+            <li><i class="fas fa-globe"></i> Cobertura nacional</li>
+            <li><i class="fas fa-star"></i> 98% de clientes satisfechos</li>
+          </ul>
         </div>
-        <div>
-          <i class="fas fa-briefcase"></i>
-          <span>10+</span>
-          <p>Años de Experiencia</p>
-        </div>
-        <div>
-          <i class="fas fa-star"></i>
-          <span>4.9/5</span>
-          <p>Calificación en Servicio</p>
+        <div class="about-historia-img">
+          <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=400&q=80" alt="Atención RH Asesorías">
         </div>
       </div>
-      <blockquote class="about-testimonio">
-        “RH Asesorías nos ayudó a resolver nuestro trámite de tránsito en tiempo récord y con total transparencia. ¡Gracias!”<br>
-        <span>- Cliente feliz</span>
-      </blockquote>
+    </section>
+
+    <section class="about-achievements">
+      <div>
+        <i class="fas fa-users"></i>
+        <span>+2,500</span>
+        <p>Clientes Satisfechos</p>
+      </div>
+      <div>
+        <i class="fas fa-briefcase"></i>
+        <span>10+</span>
+        <p>Años de Experiencia</p>
+      </div>
+      <div>
+        <i class="fas fa-star"></i>
+        <span>4.9/5</span>
+        <p>Calificación en Servicio</p>
+      </div>
+      <div>
+        <i class="fas fa-medal"></i>
+        <span>100%</span>
+        <p>Trámites Legales</p>
+      </div>
+    </section>
+
+    <section class="about-equipo">
+      <h2>Nuestro Equipo</h2>
+      <div class="about-equipo-grid">
+        <div class="about-equipo-card">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Asesor Juan">
+          <h3>Juan Rodríguez</h3>
+          <p>Asesor Principal</p>
+        </div>
+        <div class="about-equipo-card">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Asesora Laura">
+          <h3>Laura Gómez</h3>
+          <p>Gestora de Trámites</p>
+        </div>
+        <div class="about-equipo-card">
+          <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Asesor Camilo">
+          <h3>Camilo Pérez</h3>
+          <p>Especialista en Digitalización</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-testimonios">
+      <h2>Testimonios</h2>
+      <div class="testimonios-grid">
+        <blockquote>
+          <p>“RH Asesorías resolvió mi traspaso en dos días. Excelente atención y todo muy claro.”</p>
+          <footer>— Laura G., Medellín</footer>
+        </blockquote>
+        <blockquote>
+          <p>“Me sentí respaldado en todo el proceso. ¡Gracias por la paciencia y profesionalismo!”</p>
+          <footer>— Carlos P., Envigado</footer>
+        </blockquote>
+        <blockquote>
+          <p>“100% recomendados. El trámite digital fue muy fácil y me ahorraron mucho tiempo.”</p>
+          <footer>— Mónica V., Itagüí</footer>
+        </blockquote>
+      </div>
     </section>
   </main>
   <div class="floating-services">
