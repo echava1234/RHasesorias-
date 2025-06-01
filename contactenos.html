@@ -5,7 +5,7 @@
   <title>Contáctenos - RH Asesorías Tránsito</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <!-- Quitar Leaflet y agregar Mapbox GL -->
+  <!-- Mapbox GL CSS -->
   <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet" />
   <style>
     .mapa-contacto { height: 400px; width: 100%; margin: 30px 0; border-radius: 10px; }
@@ -86,22 +86,32 @@
   <footer>
     <p>&copy; 2025 RH Asesorías Tránsito</p>
   </footer>
-  <!-- Script Mapbox GL -->
+  <!-- Mapbox GL JS -->
   <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
   <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoiZWNoYXZhMDIyIiwiYSI6ImNtYmRmdmN1cTI2MGgycnEwczg2eXJheWoifQ.TmY7RziiPB2ThNaser5eLQ';
     var map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v12',
+        style: 'mapbox://styles/mapbox/satellite-streets-v12', // Puedes cambiar el estilo aquí
         center: [-75.6110, 6.2180], // [lng, lat]
-        zoom: 16
+        zoom: 17
     });
 
-    // Agregar marcador
-    new mapboxgl.Marker()
+    // Botones de zoom y rotación
+    map.addControl(new mapboxgl.NavigationControl());
+
+    // Popup personalizado
+    var popup = new mapboxgl.Popup({ offset: 25 })
+      .setHTML('<b>CALLE 5 # 75B 25, MALL LA MOTA ZONA C</b>');
+
+    // Marcador personalizado (color rojo)
+    new mapboxgl.Marker({ color: 'red' })
       .setLngLat([-75.6110, 6.2180])
-      .setPopup(new mapboxgl.Popup().setHTML('<b>CALLE 5 # 75B 25, MALL LA MOTA ZONA C</b>'))
+      .setPopup(popup)
       .addTo(map);
+
+    // Abrir el popup automáticamente
+    popup.addTo(map);
   </script>
 </body>
 </html>
