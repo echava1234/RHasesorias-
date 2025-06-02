@@ -20,9 +20,22 @@ body {
 }
 
 /* Header/Nav */
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.35); /* Oscurecer, ajusta opacidad si quieres */
+  z-index: 0;
+  pointer-events: none;
+}
+.header, .header * {
+  position: relative;
+  z-index: 1;
+}
 .header {
    background: url('imagenes/dibujo-continuo-linea-coche-deportivo.jpg') center center/cover no-repeat, #fff !important;
-  position: sticky;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
