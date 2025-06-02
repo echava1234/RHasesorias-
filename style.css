@@ -1900,7 +1900,46 @@ Y si quieres un botón de WhatsApp destacado en el menú:
   }
 }
 
+/* --- FORZAR HEADER Y NAV MÁS BAJO --- */
+.header {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  min-height: unset !important;
+}
 
+.logo-nav {
+  padding: 0 0 0 0 !important;
+  min-height: 0 !important;
+  gap: 0 !important;
+}
+
+.logo {
+  height: 38px !important;
+  max-width: 160px !important;
+  margin: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+}
+
+.lema-empresa {
+  font-size: 1em !important;
+  margin: 0.2em 0 0.2em 0 !important;
+  line-height: 1 !important;
+  padding: 0 !important;
+}
+
+.nav-list {
+  gap: 10px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.nav-list li a {
+  font-size: 1em !important;
+  padding: 4px 12px !important;
+  border-radius: 8px !important;
+}
 
 
 
