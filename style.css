@@ -1954,5 +1954,43 @@ Y si quieres un botón de WhatsApp destacado en el menú:
   border-radius: 10px !important;
 }
 
+/* --- SLIDER: mostrar solo un slide a la vez en todos los tamaños --- */
+.hero-slide {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  transition: opacity 1s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero-slide.active {
+  opacity: 1;
+  pointer-events: auto;
+  position: relative;
+  display: flex;
+}
+
+/* --- SLIDER móvil: fuerza 1 slide visible, animación suave, dots y textos bien alineados --- */
+@media (max-width: 900px) {
+  .hero-slide,
+  .hero-slide.active {
+    position: static !important;
+    display: none;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+  .hero-slide.active {
+    display: flex;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+  .hero-slider-row {
+    min-height: 220px !important;
+  }
+}
+
 
 
