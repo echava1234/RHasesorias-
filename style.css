@@ -2190,6 +2190,7 @@ Y si quieres un botón de WhatsApp destacado en el menú:
 }
 .hero-slide {
   display: flex;
+  flex-direction: row;
   width: 100%;
   min-height: 600px;
   align-items: stretch;
@@ -2199,11 +2200,13 @@ Y si quieres un botón de WhatsApp destacado en el menú:
   opacity: 0;
   pointer-events: none;
   transition: opacity 1s;
+  z-index: 1;
 }
 .hero-slide.active {
   opacity: 1;
   pointer-events: auto;
   position: relative;
+  z-index: 2;
 }
 .hero-slide-img {
   width: 50%;
