@@ -21,7 +21,7 @@ body {
 
 /* Header/Nav */
 .header {
-  background: linear-gradient(90deg, var(--naranja) 80%, var(--gris) 100%);
+  background: linear-gradient(90deg, var(--gris) 0%, var(--gris) 50%, var(--naranja) 50%, var(--naranja) 100%);
   color: var(--gris);
   padding: 0.5rem 0;
   position: sticky;
@@ -128,7 +128,7 @@ footer {
 
 .burbujas {
   position: fixed;
-  bottom: 100px;
+  bottom: 180px;
   left: 20px;
   display: flex;
   flex-direction: column;
@@ -136,8 +136,8 @@ footer {
   z-index: 2000;
 }
 .burbuja {
-  width: 55px;
-  height: 55px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background: var(--naranja);
   color: #fff;
