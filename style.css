@@ -1773,10 +1773,16 @@ Y si quieres un botón de WhatsApp destacado en el menú:
 }
 @media (max-width: 900px) {
   .hero-slide, .hero-slide.active {
-   flex-direction: column;
-    min-height: 400px;
-    align-items: center;
-    justify-content: center;
+   display: flex;
+  width: 100%;
+  min-height: 400px; /* O el alto que desees */
+  align-items: stretch;
+  justify-content: center;
+  position: absolute;
+  top: 0; left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s;
   }
   .hero-slide-img, .hero-slide-text {
    width: 100%;
@@ -1823,6 +1829,44 @@ Y si quieres un botón de WhatsApp destacado en el menú:
     max-width: 90vw;
     margin: 0 auto;
     display: block;
+  }
+}
+@media (max-width: 900px) {
+  .hero-slider-row {
+    min-height: 600px; /* MUY alto en móvil, puedes subirlo más si quieres */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-slide,
+  .hero-slide.active {
+    flex-direction: column;
+    min-height: 550px; /* Ajusta aquí si quieres aún más largo */
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-slide-img, .hero-slide-text {
+    width: 100%;
+    border-radius: 1.5vw;
+    min-height: 300px; /* Amplía la zona de imagen/texto */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero-slide-img img {
+    height: 300px; /* Imagen más alta */
+    max-height: 100%;
+  }
+  .hero-slide-text {
+    min-height: 300px;
+    height: auto;        /* Deja crecer el texto */
+    max-height: none;    /* Sin límite superior */
+    overflow: visible;   /* Que no se corte nunca */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    word-break: break-word;
+    padding: 5vw;        /* Más espacio si tienes mucho texto */
   }
 }
 
