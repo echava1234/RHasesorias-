@@ -2133,25 +2133,6 @@ Y si quieres un botón de WhatsApp destacado en el menú:
   }
 }
 
-/* --- CORRECCIÓN: Elimina alturas fijas y permite crecer según contenido en todas resoluciones --- */
-.hero-slider-row {
-  min-height: unset !important;
-}
-.hero-slide,
-.hero-slide.active {
-  min-height: unset !important;
-  height: auto !important;
-}
-.hero-slide-img img {
-  height: auto !important;
-  max-height: 320px !important;
-}
-.hero-slide-text {
-  min-height: unset !important;
-  height: auto !important;
-  max-height: none !important;
-  overflow: visible !important;
-}
 
 @media (max-width: 900px) {
   .header {
