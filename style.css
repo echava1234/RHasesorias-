@@ -1781,7 +1781,7 @@ Y si quieres un botón de WhatsApp destacado en el menú:
   .hero-slide-img, .hero-slide-text {
    width: 100%;
     border-radius: 1.5vw;
-    min-height: 250px;
+    min-height: 120px;
     height: auto;
     align-items: center;
     justify-content: center;
