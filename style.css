@@ -1607,4 +1607,90 @@ Y si quieres un botón de WhatsApp destacado en el menú:
     max-width: 100% !important;
   }
 }
+/* Mejoras responsive y uniformidad visual en móvil */
+@media (max-width: 600px) {
+  .hero, .info, .info-card, .destacados-home, 
+  .about-main .about-hero, .about-main .about-mision-vision,
+  .about-main .about-historia, .about-main .about-achievements,
+  .about-main .about-equipo, .about-main .about-testimonios, 
+  .about-main .about-timeline, .about-main .about-partners, 
+  .blog-posts, .contacto-formulario, .contacto-info {
+    padding: 1.2em 0.7em;
+    border-radius: 1em;
+    margin: 1.1em 0 !important;
+    box-shadow: 0 2px 10px #0001;
+    background: #fff;
+  }
+
+  .hero h1, .about-main .about-hero-text h1, 
+  .about-main .about-historia h2, .about-main .about-mision-vision h2,
+  .about-main .about-partners h2, .about-main .about-equipo h2,
+  .about-main .about-testimonios h2, .about-main .about-achievements h2,
+  .destacados-home h2 {
+    font-size: 2em;
+    text-align: center;
+    color: var(--naranja);
+    margin-bottom: 0.7em;
+  }
+
+  .cta-btn, .cta-btn[type="submit"] {
+    width: 100%;
+    font-size: 1.1em;
+    padding: 1em 0;
+    margin: 1em 0 0.7em 0;
+    border-radius: 2em;
+  }
+
+  .info, .destacados-home .servicios-home-grid,
+  .about-main .about-hero, .about-main .about-mision-vision,
+  .about-main .about-historia-grid, .about-main .about-achievements,
+  .about-main .about-equipo-grid, .about-main .testimonios-grid,
+  .about-main .partners-logos {
+    flex-direction: column !important;
+    gap: 1em !important;
+    align-items: center !important;
+  }
+
+  .info-card, .servicio-home, .about-main .about-hero,
+  .about-main .about-mision, .about-main .about-vision, .about-main .about-valores,
+  .about-main .about-historia, .about-main .about-achievements div,
+  .about-main .about-equipo-card, .about-main .partner-logo,
+  .about-main .testimonios-grid blockquote, .blog-post, 
+  .contacto-formulario, .contacto-info {
+    width: 100% !important;
+    min-width: unset !important;
+    max-width: 100% !important;
+    margin: 0 0 1em 0 !important;
+  }
+
+  .about-main .partner-logo img {
+    height: 64px !important;
+    max-width: 90vw !important;
+    width: auto !important;
+  }
+
+  .logo {
+    height: 60px !important;
+    margin-bottom: 0.7em;
+  }
+
+  .hero p, .about-main .about-hero-text p,
+  .about-main .about-historia p, .about-main .about-mision-vision p {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+}
+
+/* Uniformidad de cards y bloques en todos los tamaños */
+.info-card, .servicio-home, .about-main .about-hero, 
+.about-main .about-mision, .about-main .about-vision, .about-main .about-valores,
+.about-main .about-historia, .about-main .about-achievements div,
+.about-main .about-equipo-card, .about-main .partner-logo,
+.about-main .testimonios-grid blockquote, .blog-post, 
+.contacto-formulario, .contacto-info {
+  border-radius: 1em;
+  box-shadow: 0 2px 10px #0001;
+  background: #fff;
+}
 
