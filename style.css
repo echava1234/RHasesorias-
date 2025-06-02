@@ -2165,7 +2165,7 @@ Y si quieres un botón de WhatsApp destacado en el menú:
     gap: 8px !important;
   }
   .logo {
-    height: 38px !important;
+    height: 55px !important;
     max-width: 105px !important;
     margin-bottom: 0 !important;
     padding: 0 !important;
@@ -2179,7 +2179,7 @@ Y si quieres un botón de WhatsApp destacado en el menú:
 }
 @media (max-width: 500px) {
   .logo {
-    height: 29px !important;
+    height: 55px !important;
     max-width: 70vw !important;
   }
   .logo-nav {
