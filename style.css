@@ -1837,6 +1837,124 @@ Y si quieres un botón de WhatsApp destacado en el menú:
     display: block;
   }
 }
+@media (max-width: 900px) {
+  .hero-slider-row {
+    min-height: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+  .hero-slide,
+  .hero-slide.active {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Mejor para contenido variable */
+    width: 100%;
+    min-height: unset;
+    background: none;
+    box-shadow: none;
+    margin-bottom: 2em;
+  }
+  .hero-slide-img {
+    width: 100%;
+    min-height: 180px;
+    max-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5vw 1.5vw 0 0;
+    overflow: hidden;
+    background: #f6f6f6;
+  }
+  .hero-slide-img img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 320px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    background: transparent;
+  }
+  .hero-slide-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #fff7ed;
+    border-radius: 0 0 1.5vw 1.5vw;
+    box-shadow: 0 2px 14px #0002;
+    padding: 6vw 4vw 8vw 4vw; /* Espacio extra inferior para el botón */
+    box-sizing: border-box;
+    height: auto;
+    min-height: unset;
+    max-height: none;
+    overflow: visible;
+    word-break: break-word;
+    margin: 0;
+  }
+  .hero-slide-text h1 {
+    font-size: 1.7em;
+    margin: 0 0 0.6em 0;
+  }
+  .hero-slide-text p {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+    color: #222;
+  }
+  .cta-btn {
+    display: inline-block;
+    position: static;
+    margin: 0 auto;
+    margin-top: 1em;
+    width: 100%;
+    max-width: 350px;
+    font-size: 1.1em;
+    padding: 1em 0.5em;
+    background: #ff7f00;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .cta-btn:hover,
+  .cta-btn:focus {
+    background: #d96a00;
+  }
+  .hero-slider-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5em;
+    gap: 0.7em;
+    width: 100%;
+  }
+  .hero-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #ff7f00;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: opacity 0.2s, background 0.2s;
+  }
+  .hero-dot.active {
+    opacity: 1;
+    background: #d96a00;
+  }
+}
 
 
 
