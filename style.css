@@ -1930,15 +1930,15 @@ Y si quieres un botón de WhatsApp destacado en el menú:
 }
 
 .nav-list {
-  gap: 32px !important;
+  gap: 16px !important;
   margin: 0 !important;
   padding: 0 !important;
 }
 
 .nav-list li a {
-  font-size: 1.22em !important;
-  padding: 14px 32px !important;
-  border-radius: 13px !important;
+  font-size: 1.02em !important;
+  padding: 10px 24px !important;
+  border-radius: 10px !important;
 }
 
 
