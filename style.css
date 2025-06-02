@@ -1837,6 +1837,29 @@ Y si quieres un botón de WhatsApp destacado en el menú:
     display: block;
   }
 }
+@media (max-width: 900px) {
+  .hero-slide-img {
+    width: 100%;
+    min-height: 180px;
+    max-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5vw 1.5vw 0 0;
+    overflow: hidden;
+    background: #f6f6f6;
+  }
+  .hero-slide-img img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 320px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    background: transparent;
+  }
+}
 
 
 
