@@ -1773,8 +1773,10 @@ Y si quieres un botón de WhatsApp destacado en el menú:
 }
 @media (max-width: 900px) {
   .hero-slide, .hero-slide.active {
-    flex-direction: column;
+   flex-direction: column;
     min-height: 250px;
+    align-items: center;
+    justify-content: center;
   }
   .hero-slide-img, .hero-slide-text {
    width: 100%;
@@ -1789,5 +1791,30 @@ Y si quieres un botón de WhatsApp destacado en el menú:
   .hero-slide-img img {
     height: 250px;
   }
+ 
+  .hero-slider-row {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    .hero-slide-text {
+    min-height: 120px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero-slider-dots {
+    gap: 0.5em;
+    margin-top: 0.5em;
+  }
+  .hero-dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    /* Opcional: puedes reducir el scale también si quieres */
+  }
 }
+
 
