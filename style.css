@@ -21,13 +21,13 @@ body {
 
 /* Header/Nav */
 .header {
-  background: linear-gradient(90deg, var(--gris) 0%, var(--gris) 50%, var(--naranja) 50%, var(--naranja) 100%);
-  color: var(--gris);
-  padding: 0.05rem 0;
+   background: url('imagenes/istockphoto-1132771003-612x612.jpg') center center/cover no-repeat, #fff !important;
   position: sticky;
   top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  left: 0;
+  width: 100%;
+  z-index: 30;
+  box-shadow: 0 2px 9px #0002;
 }
 
 .logo-nav {
