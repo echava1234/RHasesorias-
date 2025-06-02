@@ -2387,8 +2387,8 @@ Y si quieres un botón de WhatsApp destacado en el menú:
     gap: 8px !important;
   }
   .logo {
-    height: 38px !important;
-    max-width: 105px !important;
+    height: 120px !important;
+    max-width: 200px !important;
     margin-bottom: 0 !important;
     padding: 0 !important;
   }
@@ -2401,8 +2401,8 @@ Y si quieres un botón de WhatsApp destacado en el menú:
 }
 @media (max-width: 500px) {
   .logo {
-    height: 29px !important;
-    max-width: 70vw !important;
+    height: 100px !important;
+    max-width: 220vw !important;
   }
   .logo-nav {
     padding: 2px 0 2px 0 !important;
@@ -2416,6 +2416,26 @@ Y si quieres un botón de WhatsApp destacado en el menú:
     min-height: 22px !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+  }
+}
+@media (max-width: 600px) {
+  .destacados-home .servicios-home-grid {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    gap: 1.3em !important;
+  }
+  .destacados-home .servicio-home {
+    width: 92vw !important;
+    max-width: 360px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 1em !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
   }
 }
 
