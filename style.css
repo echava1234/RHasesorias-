@@ -23,7 +23,7 @@ body {
 .header {
   background: linear-gradient(90deg, var(--gris) 0%, var(--gris) 50%, var(--naranja) 50%, var(--naranja) 100%);
   color: var(--gris);
-  padding: 0.1rem 0;
+  padding: 0.05rem 0;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -34,14 +34,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 0 2vw;
-  min-height: 56px;
+  padding: 0 1vw;
+  min-height: 48px;
 }
 
 .logo {
-  height: 48px;
+  height: 40px;
   margin-right: 1.2rem;
    margin-bottom: 0px;
 }
