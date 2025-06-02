@@ -1538,4 +1538,73 @@ Y si quieres un botón de WhatsApp destacado en el menú:
     padding: 0 8px;
   }
 }
+/* Mejora la experiencia en móviles para todas las páginas */
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+    font-size: 16px;
+  }
+
+  header, nav, main, footer, section, article, aside, .container {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Asegura que los menús y barras de navegación sean apilables */
+  nav ul, .menu {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    width: 100%;
+    padding-left: 0;
+  }
+  nav li, .menu li {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* Las imágenes se adaptan al ancho */
+  img, video, iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Tablas responsivas */
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    font-size: 14px;
+  }
+
+  /* Formularios y botones */
+  input, select, textarea, button {
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  /* Ajusta títulos y textos */
+  h1, h2, h3, h4, h5, h6 {
+    word-break: break-word;
+    font-size: 1.3em;
+  }
+
+  /* Quita márgenes/paddings grandes de secciones */
+  section, article {
+    margin: 10px 0;
+    padding: 10px 0;
+  }
+
+  /* Asegura que cualquier columna se apile */
+  .row, [class*="col-"] {
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
 
