@@ -1774,14 +1774,14 @@ Y si quieres un botón de WhatsApp destacado en el menú:
 @media (max-width: 900px) {
   .hero-slide, .hero-slide.active {
    flex-direction: column;
-    min-height: 300px;
+    min-height: 400px;
     align-items: center;
     justify-content: center;
   }
   .hero-slide-img, .hero-slide-text {
    width: 100%;
     border-radius: 1.5vw;
-    min-height: 220px;
+    min-height: 400px;
     height: auto;
     align-items: center;
     justify-content: center;
@@ -1789,17 +1789,17 @@ Y si quieres un botón de WhatsApp destacado en el menú:
     overflow: visible;
   }
   .hero-slide-img img {
-    height: 220px;
+    height: 400px;
   }
  
   .hero-slider-row {
-    min-height: 400px;
+    min-height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
     .hero-slide-text {
-    min-height: 220px;
+    min-height: 400px;
     height: auto;
     align-items: center;
     justify-content: center;
