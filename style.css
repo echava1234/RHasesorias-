@@ -1902,20 +1902,20 @@ Y si quieres un botón de WhatsApp destacado en el menú:
 
 /* --- FORZAR HEADER Y NAV MÁS BAJO --- */
 .header {
-  padding-top: 0.3 !important;
-  padding-bottom: 0.3 !important;
-  min-height: 54px !important;
+  padding-top: 1.6 !important;
+  padding-bottom: 1.2 !important;
+  min-height: 90px !important;
 }
 
 .logo-nav {
-  padding: 10px 0 6px 0 !important;
-  min-height: 48px!important;
-  gap: 6px !important;
+  padding: 30px 0 18px 0 !important;
+  min-height: 80px!important;
+  gap: 20px !important;
 }
 
 .logo {
-  height: 54px !important;
-  max-width: 180px !important;
+  height: 100px !important;
+  max-width: 250px !important;
   margin: 0 !important;
   margin-bottom: 0 !important;
   padding: 0 !important;
@@ -1923,22 +1923,22 @@ Y si quieres un botón de WhatsApp destacado en el menú:
 }
 
 .lema-empresa {
-  font-size: 1.08em !important;
-  margin: 0.2em 0 0.2em 0 !important;
-  line-height: 1.13 !important;
+  font-size: 1.35em !important;
+  margin: 0.3em 0 0.3em 0 !important;
+  line-height: 1.25 !important;
   padding: 0 !important;
 }
 
 .nav-list {
-  gap: 16px !important;
+  gap: 32px !important;
   margin: 0 !important;
   padding: 0 !important;
 }
 
 .nav-list li a {
-  font-size: 1.05em !important;
-  padding: 7px 16px !important;
-  border-radius: 8px !important;
+  font-size: 1.22em !important;
+  padding: 14px 32px !important;
+  border-radius: 13px !important;
 }
 
 
