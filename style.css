@@ -1869,5 +1869,64 @@ Y si quieres un botón de WhatsApp destacado en el menú:
     padding: 5vw;        /* Más espacio si tienes mucho texto */
   }
 }
+@media (max-width: 900px) {
+  .hero-slider-row {
+    min-height: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-slide,
+  .hero-slide.active {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: unset;
+    align-items: center;
+    justify-content: flex-start; /* Mejor para contenido variable */
+    width: 100%;
+  }
+  .hero-slide-img,
+  .hero-slide-text {
+    width: 100%;
+    border-radius: 1.5vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: unset;
+  }
+  .hero-slide-img img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;    /* Ajusta si lo deseas */
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+  .hero-slide-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* o flex-start si el contenido es muy alto */
+    text-align: center;
+    height: auto;         /* Muy importante: NO pongas height fijo */
+    min-height: unset;    /* Muy importante: permite crecer */
+    max-height: none;     /* Muy importante: sin límite */
+    overflow: visible;    /* Muy importante: deja crecer el contenido */
+    word-break: break-word;
+    padding: 5vw 5vw 7vw 5vw; /* Espacio extra abajo para el botón */
+    box-sizing: border-box;
+  }
+  .cta-btn {
+    position: static;        /* No uses absolute ni fixed */
+    margin-top: 2em;
+    width: 100%;
+    max-width: 340px;
+    font-size: 1.1em;
+    padding: 1em 0.5em;
+    box-sizing: border-box;
+  }
+}
 
 
