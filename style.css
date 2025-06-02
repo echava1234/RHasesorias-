@@ -2153,5 +2153,49 @@ Y si quieres un botón de WhatsApp destacado en el menú:
   overflow: visible !important;
 }
 
+@media (max-width: 900px) {
+  .header {
+    padding-top: 0.4em !important;
+    padding-bottom: 0.2em !important;
+    min-height: 40px !important;
+  }
+  .logo-nav {
+    padding: 4px 0 4px 0 !important;
+    min-height: 30px !important;
+    gap: 8px !important;
+  }
+  .logo {
+    height: 38px !important;
+    max-width: 105px !important;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+  }
+  .lema-empresa {
+    font-size: 0.92em !important;
+    margin: 0.2em 0 0.1em 0 !important;
+    line-height: 1.12 !important;
+    padding: 0 !important;
+  }
+}
+@media (max-width: 500px) {
+  .logo {
+    height: 29px !important;
+    max-width: 70vw !important;
+  }
+  .logo-nav {
+    padding: 2px 0 2px 0 !important;
+    min-height: 22px !important;
+    gap: 4px !important;
+  }
+  .lema-empresa {
+    font-size: 0.86em !important;
+  }
+  .header {
+    min-height: 22px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
 
 
