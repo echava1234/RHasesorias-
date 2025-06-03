@@ -48,6 +48,22 @@
       <label for="nombre">Nombre:</label>
       <input type="text" id="nombre" name="nombre" required>
     </div>
+    <!-- NUEVOS CAMPOS EN UNA FILA -->
+        <div class="campo-form-row">
+          <div class="campo-form">
+            <label for="placa">Placa del vehículo:</label>
+            <input type="text" id="placa" name="placa" maxlength="7" pattern="[A-Za-z0-9]{5,7}" required
+              title="Ingrese la placa (5 a 7 caracteres, sólo letras y números)"
+              oninput="this.value = this.value.toUpperCase().replace(/[^A-Z0-9]/g,'');">
+          </div>
+          <div class="campo-form">
+            <label for="cedula">Cédula del propietario:</label>
+            <input type="text" id="cedula" name="cedula" maxlength="12" pattern="[0-9]{6,12}" required
+              title="Ingrese solo números, entre 6 y 12 dígitos"
+              oninput="this.value = this.value.replace(/[^0-9]/g,'');">
+          </div>
+        </div>
+        <!-- FIN NUEVOS CAMPOS -->
     <div class="campo-form">
       <label for="telefono">Teléfono:</label>
       <input type="tel" id="telefono" name="telefono">
@@ -112,7 +128,7 @@ document.getElementById('mi-formulario').addEventListener('submit', function(e) 
 
     // Popup personalizado
     var popup = new mapboxgl.Popup({ offset: 25 })
-      .setHTML('<b>CALLE 5 # 75B 25, MALL LA MOTA ZONA C</b>');
+      .setHTML('<b>RH Asesorías Tránsito</b><br>CALLE 5 # 75B 25, MALL LA MOTA ZONA C, Medellín');
 
     // Marcador personalizado (color rojo)
     new mapboxgl.Marker({ color: 'red' })
