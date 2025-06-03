@@ -656,6 +656,7 @@ footer {
   border-radius: 1rem;
   box-shadow: 0 2px 10px #0001;
   padding: 2rem 2.5rem;
+  text-align: justify; /* Justifica el texto del párrafo */
 }
 .blog-post {
   margin-bottom: 2.4rem;
