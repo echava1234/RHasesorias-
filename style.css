@@ -2465,8 +2465,8 @@ Y si quieres un botón de WhatsApp destacado en el menú:
 .blog-hero-img{
    display: flex; /* Hace que la imagen sea un bloque */
   margin: 0 auto; /* Centra la imagen horizontalmente */
-  width: 120px; /* Establece el ancho deseado */
-  height: 300px; /* Mantiene la proporción de la imagen */
+  width: 300px; /* Establece el ancho deseado */
+  height: auto; /* Mantiene la proporción de la imagen */
 }
 
 
