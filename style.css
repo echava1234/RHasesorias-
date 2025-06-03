@@ -2462,6 +2462,12 @@ Y si quieres un botón de WhatsApp destacado en el menú:
     width: 100%;
   }
 }
+.blog-hero-img{
+   display: block; /* Hace que la imagen sea un bloque */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  width: 300px; /* Establece el ancho deseado */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
 
 
 
