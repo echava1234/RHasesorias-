@@ -7,6 +7,7 @@
   --blanco: #fff;
   --azul-claro: #d6eaff;
   --azul-marino: #1D334A;
+  --rojo: #ff0000;
 }
 
 /* ======================= */
@@ -69,7 +70,7 @@ body {
 }
 
 .nav-list li a {
-  color: var(--azul-marino) !important ;
+  color: var(--rojo) !important ;
   text-decoration: none;
   font-weight: 500;
   font-size: 1.13em;
