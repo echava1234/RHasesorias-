@@ -5,8 +5,6 @@
   <title>Contáctenos - RH Asesorías Tránsito</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <!-- Mapbox GL CSS -->
-  <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet" />
 </head>
 <body>
   <input type="checkbox" id="header-min-toggle" class="header-min-toggle">
@@ -30,7 +28,17 @@
   </header>
   <main>
     <h1>Contáctenos</h1>
-    <div id="map" class="mapa-contacto"></div>
+     <!-- Google Maps iframe actualizado y sin nombre de almacén antiguo -->
+    <iframe
+      class="mapa-contacto"
+      src="https://www.google.com/maps?q=CALLE+5+%23+75B+25,+Medell%C3%ADn,+Antioquia,+Colombia&output=embed"
+      width="100%"
+      height="340"
+      style="border:0; border-radius:10px; margin-bottom:1em;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
     <section class="contacto-info">
       <p><strong>Dirección:</strong> CALLE 5 # 75B 25, MALL LA MOTA ZONA C</p>
       <p><strong>Teléfonos:</strong> 3150459589, 3143159586</p>
@@ -112,32 +120,6 @@ document.getElementById('mi-formulario').addEventListener('submit', function(e) 
    <footer>
     <p> Pagina diseñada por: Miguel Echavarria -- contacto: miguelechavarria1002@outlook.es </p>
   </footer>
-  <!-- Mapbox GL JS -->
-  <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
-  <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoiZWNoYXZhMDIyIiwiYSI6ImNtYmRmdmN1cTI2MGgycnEwczg2eXJheWoifQ.TmY7RziiPB2ThNaser5eLQ';
-    var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/satellite-streets-v12', // Puedes cambiar el estilo aquí
-        center: [-75.597773, 6.215384], // [lng, lat]
-        zoom: 17
-    });
-
-    // Botones de zoom y rotación
-    map.addControl(new mapboxgl.NavigationControl());
-
-    // Popup personalizado
-    var popup = new mapboxgl.Popup({ offset: 25 })
-      .setHTML('<b>RH Asesorías Tránsito</b><br>CALLE 5 # 75B 25, MALL LA MOTA ZONA C, Medellín');
-
-    // Marcador personalizado (color rojo)
-    new mapboxgl.Marker({ color: 'red' })
-      .setLngLat([-75.597773, 6.215384])
-      .setPopup(popup)
-      .addTo(map);
-
-    // Abrir el popup automáticamente
-    popup.addTo(map);
-  </script>
+ 
 </body>
 </html>
