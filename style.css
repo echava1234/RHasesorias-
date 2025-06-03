@@ -772,6 +772,7 @@ footer {
   text-decoration: underline;
 }
 
+
 /* ======================= */
 /* RESPONSIVE              */
 /* ======================= */
@@ -2436,6 +2437,26 @@ Y si quieres un botón de WhatsApp destacado en el menú:
     margin-bottom: 1em !important;
     box-sizing: border-box !important;
     text-align: center !important;
+  }
+}
+.campo-form-row {
+  display: flex;
+  gap: 1.3em;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.campo-form-row .campo-form {
+  flex: 1 1 150px;
+  min-width: 0;
+  margin-bottom: 0;
+}
+@media (max-width: 700px) {
+  .campo-form-row {
+    flex-direction: column;
+    gap: 0.7em;
+  }
+  .campo-form-row .campo-form {
+    width: 100%;
   }
 }
 
