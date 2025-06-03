@@ -6,6 +6,7 @@
   --gris-claro: #f7f7f7;
   --blanco: #fff;
   --azul-claro: #d6eaff;
+  --azul-marino: #1D334A;
 }
 
 /* ======================= */
@@ -68,7 +69,7 @@ body {
 }
 
 .nav-list li a {
-  color: var(--azul-claro) !important ;
+  color: var(--azul-marino) !important ;
   text-decoration: none;
   font-weight: 500;
   font-size: 1.13em;
