@@ -68,7 +68,7 @@ body {
 }
 
 .nav-list li a {
-  color: var(--naranja);
+  color: var(--naranja) !important ;
   text-decoration: none;
   font-weight: 500;
   font-size: 1.13em;
