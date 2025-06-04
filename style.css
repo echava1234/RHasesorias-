@@ -2475,7 +2475,7 @@ Y si quieres un botón de WhatsApp destacado en el menú:
 }
 .sobre-nosotros{
   display: block; /* Asegura que la imagen se comporte como un bloque */
-    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    max-width: 200px; /* Asegura que la imagen no exceda el ancho del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
     margin: 0 auto; /* Centra la imagen */
 }
