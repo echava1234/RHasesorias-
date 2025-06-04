@@ -2489,5 +2489,17 @@ Y si quieres un botón de WhatsApp destacado en el menú:
         
     }
 }
-
+/* === Fondo interactivo (IMAGEN) === */
+.interactive-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px; /* Ajusta según tu imagen */
+    background-image: url('imagenes/IMG_3417.jpeg'); /* Cambia por tu imagen */
+    background-size: 120% 120%; /* Permite el movimiento */
+    background-position: center;
+    z-index: -1;
+    transition: background-position 0.4s ease-out;
+}
 
