@@ -36,7 +36,7 @@ body {
   z-index: 1;
 }
 .header {
-   background: url('imagenes/IMG_3417.jpeg')  80% -10% /auto no-repeat, #fff !important;
+   background: url('imagenes/IMG_3417.jpeg')  80% 5% /auto no-repeat, #fff !important;
   position: relative !important;
   top: 0;
   left: 0;
