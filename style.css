@@ -720,8 +720,8 @@ footer {
 }
 .campo-form input,
 .campo-form textarea {
-  width: 100% !important;
-  padding: 0.7em 1em;
+  width: calc(100% -2em) !important;
+  padding: 0.5em 0.5em;
   border: 1.5px solid #e0e0e0;
   border-radius: 0.5em;
   font-size: 1em;
@@ -730,7 +730,7 @@ footer {
   outline: none;
   transition: border 0.2s;
   background: #fafafa;
-  margin: 10px auto !important;
+  margin: 10px 0 !important;
 }
 .campo-form input:focus,
 .campo-form textarea:focus {
