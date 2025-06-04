@@ -2474,17 +2474,14 @@ Y si quieres un botón de WhatsApp destacado en el menú:
   height: auto; /* Mantiene la proporción de la imagen */
 }
 .sobre-hero-img{
-  display: block; /* Asegura que la imagen se comporte como un bloque */
-    max-width: 200px; /* Asegura que la imagen no exceda el ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    margin: 0 auto; /* Centra la imagen */
-    width: 80%; /* Ajusta el ancho de la imagen al 80% del contenedor */
-    box-shadow: 0 2px 14px #0002;
+  flex: 1 1 300px;
+  min-width: 270px;
+  text-align: right;
 }
 /* Consultas de medios para dispositivos móviles */
 @media (max-width: 768px) {
     .header {
-        background: url('imagenes/IMG_3417.jpeg') center center / cover no-repeat, #fff !important; /* Cambia a cover para que la imagen se ajuste mejor */
+        background: url('imagenes/IMG_3417.jpeg') 90% 55% / cover no-repeat, #fff !important; /* Cambia a cover para que la imagen se ajuste mejor */
         min-height: 60px !important; /* Ajusta la altura mínima según sea necesario */
     }
 }
