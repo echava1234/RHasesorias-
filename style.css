@@ -730,7 +730,7 @@ footer {
   outline: none;
   transition: border 0.2s;
   background: #fafafa;
-  margin: 10px 40px;
+  margin: 10px 0px;
 }
 .campo-form input:focus,
 .campo-form textarea:focus {
