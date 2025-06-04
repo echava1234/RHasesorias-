@@ -2489,23 +2489,23 @@ Y si quieres un botón de WhatsApp destacado en el menú:
         
     }
 }
-/* === Fondo interactivo (IMAGEN) === */
+/* === Fondo interactivo (IMAGEN) === 
 .interactive-header {
-    position: absolute;  /* Cambia de fixed a absolute */
+    position: absolute;  Cambia de fixed a absolute 
     top: 0;
     left: 0;
     width: 100%;
-    height: 300px; /* Misma altura que tu encabezado */
+    height: 300px; Misma altura que tu encabezado 
     background-image: url('imagenes/IMG_3417.jpeg')!important;
     background-size: 120% 120%;
     background-position: center;
-    z-index: -1; /* Asegúrate de que esté detrás del contenido */
+    z-index: -1; Asegúrate de que esté detrás del contenido 
     transition: background-position 0.4s ease-out;
 }
 
-/* Asegura que el body no tenga márgenes/padding */
+/* Asegura que el body no tenga márgenes/padding 
 body {
     margin: 0;
     padding: 0;
-    position: relative; /* Necesario para que el absolute funcione */
-}
+    position: relative; Necesario para que el absolute funcione 
+}*/
