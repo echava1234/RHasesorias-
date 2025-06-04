@@ -720,7 +720,7 @@ footer {
 }
 .campo-form input,
 .campo-form textarea {
-  width: calc(100% - 2em) !important;
+  width: 100% !important;
   padding: 0.7em 1em;
   border: 1.5px solid #e0e0e0;
   border-radius: 0.5em;
