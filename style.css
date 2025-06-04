@@ -43,7 +43,7 @@ body {
   width: 100%;
   z-index: 30;
   box-shadow: 0 2px 9px #0002;
-  min-height: 100px ; /* Ajusta según sea necesario */
+  min-height: 80px !important; /* Ajusta según sea necesario */
 }
 
 .logo-nav {
