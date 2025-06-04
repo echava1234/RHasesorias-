@@ -6,7 +6,7 @@
   --gris-claro: #f7f7f7;
   --blanco: #fff;
   --azul-claro: #d6eaff;
-  --azul-marino: #1D334A;
+  --azul-marino: #0000ff;
   --rojo: #ff0000;
 }
 
@@ -71,7 +71,7 @@ body {
 }
 
 .nav-list li a {
-  color: var(--rojo) !important ;
+  color: var(--azul-marino) !important ;
   text-decoration: none;
   font-weight: 500;
   font-size: 1.13em;
@@ -2473,6 +2473,11 @@ Y si quieres un botón de WhatsApp destacado en el menú:
   width: 300px; /* Establece el ancho deseado */
   height: auto; /* Mantiene la proporción de la imagen */
 }
-
+.sobre-nosotros{
+  display: block; /* Asegura que la imagen se comporte como un bloque */
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 0 auto; /* Centra la imagen */
+}
 
 
