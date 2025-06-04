@@ -695,7 +695,7 @@ footer {
 .contacto-formulario {
   background: var(--blanco);
   max-width: 600px;
-  margin: 2em auto 3em auto;
+  margin: 2em 2em 3em 2em;
   padding: 4em;
   border-radius: 1em;
   box-shadow: 0 2px 10px #0001;
