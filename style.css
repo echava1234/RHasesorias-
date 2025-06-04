@@ -2473,7 +2473,7 @@ Y si quieres un botón de WhatsApp destacado en el menú:
   width: 300px; /* Establece el ancho deseado */
   height: auto; /* Mantiene la proporción de la imagen */
 }
-.sobre-nosotros{
+.sobre-hero-img{
   display: block; /* Asegura que la imagen se comporte como un bloque */
     max-width: 200px; /* Asegura que la imagen no exceda el ancho del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
