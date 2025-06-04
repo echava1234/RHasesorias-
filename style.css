@@ -71,7 +71,7 @@ body {
 }
 
 .nav-list li a {
-  color: var(--azul-marino) !important ;
+  color: var(--blanco) !important ;
   text-decoration: none;
   font-weight: 500;
   font-size: 1.13em;
@@ -2426,6 +2426,9 @@ Y si quieres un botón de WhatsApp destacado en el menú:
     padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
+  .nav-list li a {
+  color: var(--gris) !important ;
+  }
 }
 @media (max-width: 600px) {
   .destacados-home .servicios-home-grid {
@@ -2483,6 +2486,7 @@ Y si quieres un botón de WhatsApp destacado en el menú:
     .header {
         background: url('imagenes/IMG_3421bnnb.png') center / cover no-repeat, #fff !important; /* Cambia a cover para que la imagen se ajuste mejor */
         min-height: 60px !important; /* Ajusta la altura mínima según sea necesario */
+        
     }
 }
 
