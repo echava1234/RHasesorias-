@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
     // Reutiliza el contenedor del encabezado si ya existe (evita duplicar)
     const existingHeader = document.querySelector('header'); // Ajusta según tu HTML
     const bg = existingHeader || document.createElement('div');
@@ -22,5 +22,5 @@ document.addEventListener('DOMContentLoaded', () => {
             moveBg(e.touches[0].clientX, e.touches[0].clientY);
             e.preventDefault();
         }, { passive: false });
-    }
-});
+    }*/
+//});
