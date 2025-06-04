@@ -1,28 +1,26 @@
-// interactive.js
-document.addEventListener('DOMContentLoaded', function() {
-    const interactiveBg = document.createElement('div');
-    interactiveBg.className = 'interactive-header';
-    document.body.prepend(interactiveBg);
-
-    function moveBackground(x, y) {
-        interactiveBg.style.backgroundPosition = `${x}% ${y}%`;
+document.addEventListener('DOMContentLoaded', () => {
+    // Reutiliza el contenedor del encabezado si ya existe (evita duplicar)
+    const existingHeader = document.querySelector('header'); // Ajusta según tu HTML
+    const bg = existingHeader || document.createElement('div');
+    
+    if (!existingHeader) {
+        bg.className = 'interactive-header';
+        document.body.prepend(bg);
     }
 
-    // Desktop: Mueve con el mouse
+    function moveBg(x, y) {
+        const posX = (x / window.innerWidth) * 20 - 10;
+        const posY = (y / window.innerHeight) * 20 - 10;
+        bg.style.backgroundPosition = `${50 + posX}% ${50 + posY}%`;
+    }
+
+    // Desktop y móvil (igual que antes)
     if (window.matchMedia("(min-width: 768px)").matches) {
-        document.addEventListener('mousemove', (e) => {
-            const x = (e.clientX / window.innerWidth) * 100;
-            const y = (e.clientY / window.innerHeight) * 50; // Reduce movimiento vertical
-            moveBackground(x, y);
-        });
-    }
-    // Móvil: Mueve con el dedo
-    else {
+        document.addEventListener('mousemove', (e) => moveBg(e.clientX, e.clientY));
+    } else {
         document.addEventListener('touchmove', (e) => {
-            const x = (e.touches[0].clientX / window.innerWidth) * 100;
-            const y = (e.touches[0].clientY / window.innerHeight) * 50;
-            moveBackground(x, y);
-            e.preventDefault(); // Evita scroll no deseado
+            moveBg(e.touches[0].clientX, e.touches[0].clientY);
+            e.preventDefault();
         }, { passive: false });
     }
 });
