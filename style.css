@@ -2478,6 +2478,7 @@ Y si quieres un botón de WhatsApp destacado en el menú:
     max-width: 200px; /* Asegura que la imagen no exceda el ancho del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
     margin: 0 auto; /* Centra la imagen */
+    width: 80%; /* Ajusta el ancho de la imagen al 80% del contenedor */
 }
 
 
