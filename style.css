@@ -720,7 +720,7 @@ footer {
 }
 .campo-form input,
 .campo-form textarea {
-  width: 300px !important;
+  width: 250px !important;
   padding: 0.5em 0.5em;
   border: 1.5px solid #e0e0e0;
   border-radius: 0.5em;
@@ -730,7 +730,7 @@ footer {
   outline: none;
   transition: border 0.2s;
   background: #fafafa;
-  margin: 10px 10px !important;
+  margin: 10px 0 !important;
 }
 .campo-form input:focus,
 .campo-form textarea:focus {
