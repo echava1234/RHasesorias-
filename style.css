@@ -2610,3 +2610,76 @@ body {
     box-shadow: 0 2px 7px #0001 !important;
   }
 }
+@media (max-width: 600px) {
+  .about-main .about-partners,
+  .about-main .about-testimonios,
+  .about-main .about-achievements {
+    max-width: 100vw !important;
+    width: 100vw !important;
+    padding: 1.2em 0.7em !important;
+    box-sizing: border-box !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border-radius: 1em !important;
+  }
+  .about-main .partners-logos {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1em !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+  }
+  .about-main .partner-logo {
+    width: 100% !important;
+    max-width: 300px !important;
+    margin: 0 auto 1em auto !important;
+    padding: 1em 0.5em !important;
+    box-sizing: border-box !important;
+  }
+  .about-main .partner-logo img {
+    max-width: 80vw !important;
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+  .about-main .about-testimonios h2,
+  .about-main .about-achievements h2 {
+    font-size: 1.3em !important;
+    text-align: center !important;
+  }
+  .about-main .testimonios-grid {
+    flex-direction: column !important;
+    gap: 1em !important;
+    align-items: center !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+  }
+  .about-main .testimonios-grid blockquote {
+    max-width: 99vw !important;
+    width: 99vw !important;
+    padding: 1em 0.7em !important;
+    margin: 0 auto 1em auto !important;
+    box-sizing: border-box !important;
+    border-radius: 1em !important;
+  }
+  .about-main .about-achievements {
+    flex-direction: column !important;
+    gap: 1em !important;
+    align-items: center !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 0 auto 1em auto !important;
+  }
+  .about-main .about-achievements div {
+    width: 100% !important;
+    max-width: 320px !important;
+    margin: 0 auto 1em auto !important;
+    padding: 1em 0.7em !important;
+    box-sizing: border-box !important;
+    border-radius: 1em !important;
+    text-align: center !important;
+  }
+}
