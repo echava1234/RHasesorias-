@@ -26,8 +26,74 @@
       </nav>
     </div>
   </header>
+  <!-- Botón "Ir arriba" (después del header) -->
+  <button id="scrollTopBtn" title="Ir arriba" style="display:none;position:fixed;bottom:20px;right:20px;z-index:999;font-size:24px;padding:10px 16px;border-radius:50%;background:#3498db;color:#fff;border:none;cursor:pointer;">↑</button>
+  <script>
+  // Botón "Ir arriba"
+  const scrollTopBtn = document.getElementById('scrollTopBtn');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 200) {
+      scrollTopBtn.style.display = 'block';
+    } else {
+      scrollTopBtn.style.display = 'none';
+    }
+  });
+  scrollTopBtn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  </script>
   <main>
     <h1 class="titulo-blog"><i class="fas fa-newspaper"></i> Blog de Noticias de Tránsito</h1>
+
+    <!-- FORMULARIOS ANTES DE LAS NOTICIAS -->
+    <!-- Sección 1: Formularios para traspaso -->
+    <section class="blog-section">
+      <h2>Formularios para traspaso</h2>
+      <div class="form-card">
+        <h3>Formulario de mandato</h3>
+        <p>Descarga el <a href="public/files/formulario-mandato-traspaso.pdf" download>formulario de mandato</a>.</p>
+      </div>
+      <div class="form-card">
+        <h3>Formulario de compraventa</h3>
+        <p>Descarga el <a href="public/files/formulario-compraventa.pdf" download>formulario de compraventa</a>.</p>
+      </div>
+      <div class="form-card">
+        <h3>Formulario RUNT</h3>
+        <p>Descarga el <a href="public/files/formulario-runt-traspaso.pdf" download>formulario RUNT</a>.</p>
+      </div>
+    </section>
+
+    <!-- Sección 2: Formularios para traspaso indeterminado -->
+    <section class="blog-section">
+      <h2>Formularios para traspaso indeterminado</h2>
+      <div class="form-card">
+        <h3>Formulario de mandato</h3>
+        <p>Descarga el <a href="public/files/formulario-mandato-indeterminado.pdf" download>formulario de mandato</a>.</p>
+      </div>
+      <div class="form-card">
+        <h3>Solicitud indeterminado</h3>
+        <p>Descarga la <a href="public/files/solicitud-indeterminado.pdf" download>solicitud indeterminado</a>.</p>
+      </div>
+      <div class="form-card">
+        <h3>Formulario RUNT</h3>
+        <p>Descarga el <a href="public/files/formulario-runt-indeterminado.pdf" download>formulario RUNT</a>.</p>
+      </div>
+    </section>
+
+    <!-- Sección 3: Formularios para duplicado de matrícula o placa -->
+    <section class="blog-section">
+      <h2>Formularios para duplicado de matrícula o placa</h2>
+      <div class="form-card">
+        <h3>Formulario de mandato</h3>
+        <p>Descarga el <a href="public/files/formulario-mandato-duplicado.pdf" download>formulario de mandato</a>.</p>
+      </div>
+      <div class="form-card">
+        <h3>Formulario RUNT</h3>
+        <p>Descarga el <a href="public/files/formulario-runt-duplicado.pdf" download>formulario RUNT</a>.</p>
+      </div>
+    </section>
+
+    <!-- NOTICIAS DEL BLOG -->
     <div class="blog-posts">
       <div class="blog-post">
         <h2>Nuevo pico y placa en la ciudad</h2>
@@ -54,7 +120,6 @@ El Pico y Placa es una medida que restringe la circulación de vehículos en la 
       </div>
       <!-- Agrega aquí más noticias -->
     </div>
-   
   </main>
   <div class="floating-services">
     <span>Prestamos servicios de <strong>Efecty</strong>, <strong>Servientrega</strong> y <strong>Coordinadora</strong></span>
@@ -67,9 +132,16 @@ El Pico y Placa es una medida que restringe la circulación de vehículos en la 
   <footer>
     <p>&copy; 2025 RH Asesorías Tránsito</p>
   </footer>
-   <footer>
+  <footer>
     <p> Pagina diseñada por: Miguel Echavarria -- contacto: miguelechavarria1002@outlook.es </p>
   </footer>
-  
+  <!-- Estilos extra para formularios y secciones (puedes ponerlos en tu style.css si prefieres) -->
+  <style>
+    .blog-section { margin: 40px auto; max-width: 800px; padding: 24px; background: #f8f8f8; border-radius: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);}
+    .blog-section h2 { color: #1a6eb2; border-bottom: 1px solid #e0e0e0; margin-bottom: 18px; }
+    .form-card { background: #fff; padding: 18px 22px; border-radius: 8px; margin-bottom: 14px; box-shadow: 0 1px 4px rgba(0,0,0,0.02);}
+    .form-card h3 { margin: 0 0 8px 0; font-size: 1.18em; color: #333; }
+    .form-card a { color: #3498db; text-decoration: underline;}
+  </style>
 </body>
 </html>
