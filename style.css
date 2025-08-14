@@ -2509,3 +2509,29 @@ body {
     padding: 0;
     position: relative; Necesario para que el absolute funcione 
 }*/
+
+/* ... Todo tu CSS anterior ... */
+
+/* --- CORRECCIÓN MOBILE Misión, Visión, Valores --- */
+@media (max-width: 600px) {
+  .about-main .about-mision-vision {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 1em !important;
+    padding: 0 0.2em !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 1em 0 !important;
+  }
+  .about-main .about-mision,
+  .about-main .about-vision,
+  .about-main .about-valores {
+    max-width: 100% !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    padding: 1.2em 0.8em !important;
+    margin: 0 0 1em 0 !important;
+    box-sizing: border-box !important;
+    border-radius: 1em !important;
+  }
+}
