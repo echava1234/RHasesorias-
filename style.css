@@ -2535,3 +2535,55 @@ body {
     border-radius: 1em !important;
   }
 }
+
+/* --- CORRECCIÓN DE PADDING Y ANCHO EN MÓVILES PARA BLOG Y FORMULARIOS --- */
+@media (max-width: 600px) {
+  .blog-section,
+  .form-card,
+  .blog-posts,
+  .blog-post {
+    max-width: 100vw !important;
+    width: 100vw !important;
+    box-sizing: border-box !important;
+    padding: 1em 0.8em !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border-radius: 12px !important;
+  }
+  .blog-section h2 {
+    font-size: 1.25em !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .form-card {
+    padding: 1em 0.5em !important;
+    margin-bottom: 1em !important;
+  }
+  .blog-posts {
+    padding: 1em 0.7em !important;
+  }
+  .blog-post {
+    padding-bottom: 1em !important;
+    margin-bottom: 1em !important;
+  }
+  .blog-hero-img {
+    width: 98vw !important;
+    max-width: 350px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+}
+
+/* Para tablets */
+@media (max-width: 900px) {
+  .blog-section,
+  .form-card,
+  .blog-posts {
+    max-width: 98vw !important;
+    width: 98vw !important;
+    box-sizing: border-box !important;
+    padding-left: 1vw !important;
+    padding-right: 1vw !important;
+  }
+}
