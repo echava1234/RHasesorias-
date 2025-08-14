@@ -2747,3 +2747,20 @@ body {
     font-size: 1em !important;
   }
 }
+
+/* Forzar color del enlace activo (Sobre Nosotros) en el menú del header */
+.nav-list li a.active {
+  background: var(--naranja) !important;
+  color: #fff !important;
+}
+
+/* Forzar color en móviles también */
+@media (max-width: 600px) {
+  .nav-list li a.active {
+    background: var(--naranja) !important;
+    color: #fff !important;
+  }
+  .header {
+    background: #fff !important;
+  }
+}
