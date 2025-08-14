@@ -2587,3 +2587,26 @@ body {
     padding-right: 1vw !important;
   }
 }
+
+@media (max-width: 600px) {
+  .about-main .about-equipo-card {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin: 0 auto 1em auto !important;
+    width: 98vw !important;
+    max-width: 340px !important;
+    box-sizing: border-box !important;
+  }
+  .about-main .about-equipo-card img {
+    display: block !important;
+    margin: 0 auto 0.7em auto !important;
+    width: 90px !important;
+    height: 90px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    box-shadow: 0 2px 7px #0001 !important;
+  }
+}
